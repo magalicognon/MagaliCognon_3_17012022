@@ -1,0 +1,115 @@
+.card_plate {
+  position: relative;
+  width: 94%;
+  background: white;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0px 3px 10px #e1dede;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  animation-name: FadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+
+  &:not(:hover) {
+    .bloc_color {
+      display: none;
+    }
+  }
+
+  &:hover {
+    border-radius: 20px 20px 20px 20px;
+    }
+  .price {
+    font-weight: bold;
+  }
+  .bloc_color {
+    background-color: #99E2D0;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #99E2D0 1px solid;
+    border-radius: 0px 20px 20px 0px;
+    animation-name: progress-bar;
+    animation-duration: 1000ms;
+    transform-origin: right;
+
+    i{
+      color: white;
+      font-size: 20px;
+      animation-name: check-turn;
+      animation-duration: 500ms;
+      }
+
+    }
+  .desc_price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+    align-items: flex-end;
+    padding: 10px;
+
+  }
+}
+
+span {
+  font-size: 18px;
+  font-weight: bold;
+  display: -webkit-box;
+}
+
+p {
+  margin-top: 5px;
+  color: #818181;
+  font-weight: 400;
+  margin-bottom: 0px;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card_1,.card_4,.card_7,{
+  animation-duration: 200ms;
+}
+.card_2,.card_5,.card_8{
+  animation-duration: 1s;
+}
+.card_3,.card_6,.card_9{
+  animation-duration: 2s;
+}
+.card_10{
+  animation-duration:3s;
+}
+
+@keyframes check-turn {
+  from {
+  transform: rotate(0deg);
+  }
+  to{
+  transform:rotate(360deg)
+  }
+}
+
+@keyframes progress-bar {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes FadeIn {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}

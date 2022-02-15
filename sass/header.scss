@@ -1,0 +1,24 @@
+.header_menu {
+  display: block;
+  text-align: center;
+  position: relative;
+
+  h1 {
+    display: none;
+  }
+
+  i {
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    padding-top: 5px;
+  }
+
+  a {
+    color: black;
+
+    &:hover {
+      color: #818181;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.function_card_list {
+  ul {
+    padding-left: 0px;
+  }
+
+  .function_card {
+    display: flex;
+    align-items: center;
+    border: solid #f1f0f1;
+    border-radius: 25px;
+    background: #f1f0f1;
+    padding: 7px;
+    margin-right: 20px;
+    margin-left: 35px;
+    box-shadow: 0px 3px 10px #e1dede;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+    &:hover{
+      background: #f4ecfe;
+      cursor: pointer;
+    }
+    &:hover i{
+      color: #9356DC;
+    }
+    .number {
+      border: solid 1px #9356DC;
+      background: #9356DC;
+      border-radius: 100px;
+      color: white;
+      margin-right: 20px;
+      margin-left: -17px;
+    }
+
+    span {
+      font-size: 16px;
+      padding: 5px 6px;
+    }
+
+    i {
+      color: #7d7e7e;
+      margin-right: 25px;
+      font-size: 18px;
+      }
+    }
+
+    h3 {
+      font-size: 15px;
+      font-weight: 500;
+    }
+  }

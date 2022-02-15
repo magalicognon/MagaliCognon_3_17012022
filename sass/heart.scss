@@ -1,0 +1,26 @@
+.heart {
+  i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  span{
+    transition-property: color;
+    transition-duration: 3s;
+    color: white;
+    &:hover{
+      color: #9356DC;
+      .far{
+        display: none;
+      }
+    }
+    &:not(:hover){
+      .fas{
+        display: none;
+      }
+    }
+  }
+  .far {
+    color: #646464;
+  }
+}

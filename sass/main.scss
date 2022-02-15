@@ -1,0 +1,91 @@
+.logo
+{
+	text-align: center;
+	h1{
+		display: none;
+	}
+	img{
+		height: 30px;
+		width: 40%;
+	}
+}
+.search_location
+{
+	background:#f1f0f1 ;
+	margin-top: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 45px;
+}
+.logo_location
+{
+	display: flex;
+	i{
+		margin-left: 128px;
+		margin-right:15px;
+	}
+}
+
+.location
+{
+	padding-bottom: 10px;
+    padding-top: 10px;
+    background:#eaeaea ;
+    border-top: solid #dbdbdb;
+}
+
+.city
+{
+	font-size: 14px;
+	color: #606060;
+	font-weight: bold;
+}
+.search_restaurant
+{
+	text-align: center;
+	h3{
+		font-size: 25px;
+		font-weight: bold;
+		margin-left: 30px;
+    	margin-right: 30px;
+    	margin-bottom: 10px;
+	}
+	.description_search{
+		color:#606060;
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 30px;
+	}
+}
+.function{
+	h2{
+		font-size: 20px;
+		margin-left: 30px;
+		margin-top: 40px;
+		margin-bottom: 25px;
+	}
+}
+
+.restaurant_list{
+	width: 100%;
+	background: #f1f0f1;
+	padding-bottom: 50px;
+	h2{
+		margin-left: 30px;
+		padding-top: 50px;
+		font-size: 20px;
+		}
+}
+
+footer{
+	background: black;
+}
+
+@import "buttons";
+//@import '@fortawesome/fontawesome-free/scss/fontawesome';
+@import "card_function";
+@import "restaurant_card";
+@import "footer";
+@import "heart";
+@import "bloc_page";
+@import "loader";
+

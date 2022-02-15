@@ -1,0 +1,38 @@
+footer{
+  background: #353535;
+  color: white;
+  padding: 30px;
+  padding-bottom: 20px;
+  .footer_list{
+    margin-left: 8px;
+  }
+  svg{
+    margin-bottom: 20px;
+  }
+  h4{
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    height: 15px;
+    margin-top: 10px;
+  }
+  i{
+    font-size: 13px;
+    margin-right: 9px;
+  }
+  .fa-utensils {
+    margin-right: 15px;
+  }
+  .restaurant_proposition,.Partner{
+    display: flex;
+    align-items: center;
+    height: 15px;
+    margin-bottom: 10px;
+
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+}
