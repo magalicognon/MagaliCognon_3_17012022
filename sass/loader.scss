@@ -11,17 +11,15 @@
   border-top: 16px solid #e299e1; /* Blue */
   border-radius: 50%;
   animation: spin 3s linear;
-  animation-fill-mode: forwards;
+  //animation-fill-mode: forwards;
   margin: auto;
   position: fixed;
   z-index: 9999;
-  left: 0;
+  left: -1000px;
   top: 0;
+  //display:none;
   //right: 0;
   //bottom: 0;
-  //width: 120px;
-  //height: 120px;
-
 
 }
 
@@ -43,8 +41,10 @@
     opacity: 1;
     width: 120px;
     height: 120px;
+    left: 0;
     bottom: 0;
     right: 0;
+    display: block;
   }
 
   //50% {
@@ -60,6 +60,7 @@
     height: 120px;
     bottom: 0;
     right: 0;
+    left: 0;
   }
 }
 
