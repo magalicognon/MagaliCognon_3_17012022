@@ -27,7 +27,7 @@
   }
   .bloc_color {
     background-color: #99E2D0;
-    width: 20%;
+    width: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,12 +36,13 @@
     animation-name: progress-bar;
     animation-duration: 1000ms;
     transform-origin: right;
+    animation-fill-mode: forwards;
 
     i{
       color: white;
       font-size: 20px;
       animation-name: check-turn;
-      animation-duration: 500ms;
+      animation-duration: 1000ms;
       }
 
     }
@@ -98,9 +99,11 @@ p {
 @keyframes progress-bar {
   0% {
     transform: scaleX(0);
+    width: 0;
   }
   100% {
     transform: scaleX(1);
+    width: 20%;
   }
 }
 
