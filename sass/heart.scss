@@ -5,13 +5,18 @@
   }
 
   span{
-    transition-property: color;
-    transition-duration: 3s;
-    color: white;
     &:hover{
-      color: #9356DC;
       .far{
         display: none;
+      }
+      .fas{
+        background:-moz-linear-gradient(50deg,#FF79DA,#9356DC);
+        background: -webkit-linear-gradient(50deg,#FF79DA,#9356DC);
+        background: linear-gradient(50deg,#FF79DA,#9356DC);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
       }
     }
     &:not(:hover){
@@ -22,5 +27,9 @@
   }
   .far {
     color: #646464;
+  }
+  .fas{
+    color: transparent;
+
   }
 }

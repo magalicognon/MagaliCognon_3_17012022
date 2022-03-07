@@ -32,22 +32,26 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
-.heart span {
-  transition-property: color;
-  transition-duration: 3s;
-  color: white;
-}
-.heart span:hover {
-  color: #9356DC;
-}
 .heart span:hover .far {
   display: none;
+}
+.heart span:hover .fas {
+  background: -moz-linear-gradient(50deg, #FF79DA, #9356DC);
+  background: -webkit-linear-gradient(50deg, #FF79DA, #9356DC);
+  background: linear-gradient(50deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .heart span:not(:hover) .fas {
   display: none;
 }
 .heart .far {
   color: #646464;
+}
+.heart .fas {
+  color: transparent;
 }
 
 .card_plate {
