@@ -1,10 +1,12 @@
 .restaurant_card {
-  width: 85%;
-  margin: 30px;
+  width: 90%;
+  margin-right: 20px;
+  margin-left: 20px;
   background: white;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   box-shadow: 0px 3px 10px #e1dede;
+  position: relative;
 
   a {
     color: black;
@@ -15,18 +17,19 @@
 
   .restaurant_picture {
     width: 100%;
-    height: 140px;
+    height: 180px;
     background-size: cover;
     border-radius: 10px 10px 0px 0px;
   }
 
   .under_picture {
-    margin-left: 15px;
+    margin-left: 10px;
     display: flex;
     justify-content: space-between;
     margin-top: 8px;
-    width: 90%;
+    width: 88%;
     position: relative;
+    margin-bottom: -15px;
   }
 
   .name_city {
@@ -34,14 +37,14 @@
   }
 
   span {
-    font-size: 16px;
+    font-size: 19px;
     margin-bottom: 10px;
     font-weight: 700;
   }
 
   h3 {
-    font-size: 12px;
-    font-weight: 300;
+    font-size: 17px;
+    font-weight: 500;
     margin: 5px;
   }
   .heart {
@@ -52,6 +55,19 @@
     }
 
 
+  }
+  .on_picture{
+    span{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: #06896a;
+      background-color: #98e1cf;
+      padding: 5px 10px;
+      border: solid transparent;
+      border-radius: 2px;
+      font-size: 14px;
+    }
   }
 }
 
