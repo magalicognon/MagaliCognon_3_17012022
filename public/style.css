@@ -257,6 +257,8 @@ footer a {
   display: none;
 }
 .heart span:hover .fas {
+  transition-property: display;
+  transition-duration: 3s;
   background: -moz-linear-gradient(50deg, #FF79DA, #9356DC);
   background: -webkit-linear-gradient(50deg, #FF79DA, #9356DC);
   background: linear-gradient(50deg, #FF79DA, #9356DC);
@@ -266,6 +268,8 @@ footer a {
   -webkit-text-fill-color: transparent;
 }
 .heart span:not(:hover) .fas {
+  transition-property: display;
+  transition-duration: 3s;
   display: none;
 }
 .heart .far {

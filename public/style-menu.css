@@ -33,10 +33,7 @@ body {
   font-size: 25px;
   cursor: pointer;
 }
-.heart span:hover .far {
-  display: none;
-}
-.heart span:hover .fas {
+.heart span .fas {
   background: -moz-linear-gradient(50deg, #FF79DA, #9356DC);
   background: -webkit-linear-gradient(50deg, #FF79DA, #9356DC);
   background: linear-gradient(50deg, #FF79DA, #9356DC);
@@ -45,8 +42,16 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.heart span:not(:hover) .fas {
+.heart span:hover .far {
   display: none;
+}
+.heart span:hover .fas {
+  opacity: 1;
+  transition: opacity 2s;
+}
+.heart span:not(:hover) .fas {
+  opacity: 0;
+  transition: opacity 2s;
 }
 .heart .far {
   color: #646464;
